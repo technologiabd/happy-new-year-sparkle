@@ -1,0 +1,87 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  padding: 20px;
+  z-index: 10;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+p {
+  font-size: 1.1em;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #ffef3f;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff6f91;
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #000;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #ff3f7f;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes heart-beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.animate-heart {
+  animation: heart-beat 1s infinite;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.fade-in.delay {
+  animation-delay: 1s;
+}
+
+.fade-in.delay2 {
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
